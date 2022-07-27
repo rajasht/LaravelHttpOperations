@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/response', function () {
+    return response('Hello World');
+});
+
 Route::post('login',[LoginController::class,'userLogin']);
 Route::view('profile','profile');
 
